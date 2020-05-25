@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+}
+
+.about_info{
+  margin: auto 0;
+  width: 60% ;
+}
+
+.about_name{
+  color: #c4c4c4;
+}
+
+.about_title{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.about_button{
+  margin-top: 3rem;
+  width: 35%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 12pt;
+  border: 2px solid black;
+  text-transform: uppercase;
+
+  :hover{
+    cursor: pointer;
+  }
+}
+

@@ -1,6 +1,7 @@
 .header{
-  height: 1080px;
-  background: url("src/img/homeBg.png") no-repeat center;
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/img/homeBg.png") no-repeat center;
   overflow: hidden;
   display: grid;
   grid-template-rows: 1fr 2fr;
@@ -9,16 +10,29 @@
 .nav{
   width:30%;
   margin: 1.5rem auto;
+
   ul{
-    display: inline-block;
+    width:100%;
+    display: flex;
     list-style-type: none;
+
     :not(:last-child){
-      margin-right: 5rem;
+      margin-right: 20%;
     }
+
     li{
       float: left;
       font-size: 14pt;
+
+      :hover{
+        background-color: dodgerblue ;
+        transition: 0.3s;
+
+      }
+
       a{
+        padding: 0.7rem;
+        border-radius: 0.2rem;
         text-decoration: none;
         color: rgba(white, 0.9);
       }
@@ -57,7 +71,6 @@
 
     :hover{
       cursor: pointer;
-
     }
   }
 

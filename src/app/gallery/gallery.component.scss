@@ -1,0 +1,43 @@
+.title{
+  margin: 5rem auto;
+  text-align: center;
+
+  h2{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  p{
+    width: 60%;
+    margin: 0 auto;
+    color: #5b5b5c;
+    font-size: 15pt;
+  }
+}
+
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .column{
+    max-width: 32%;
+    overflow: hidden;
+
+    :not(:first-child and :last-child){
+      padding: 0.5rem;
+
+    }
+    img{
+      margin-top: 1.5rem;
+      vertical-align: middle;
+      width: 100%;
+      transition: 1s;
+    }
+
+    img:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
